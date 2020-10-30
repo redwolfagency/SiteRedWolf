@@ -1,0 +1,71 @@
+.section-home{
+  .home-bg{
+    //background-color: darkred;
+    position: absolute;
+    //height: 300px;
+    //width: 100%;
+    background-image: url("~@/assets/images/fond.png");
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    width: 100%;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    @include respond-above(sm){
+      clip-path: polygon(0 0, 84% 0, 70% 100%, 0% 100%);
+    }
+
+  }
+
+
+  .home-title{
+    position: absolute;
+    right: 0em;
+    top:15em;
+    text-align: center;
+    @include respond-above(sm){
+      right: 5.1em;
+      top:15em;
+      text-align: left;
+    }
+    @include respond-above(lg){
+      right: 3.6em;
+
+    }
+    @include respond-above(xl){
+      right: 8.7em;
+
+    }
+
+    h1{
+      font-size: 3rem;
+      @include upperText;
+      @include respond-above(sm){
+        font-size: 6.5rem;
+      }
+    }
+    h3{
+      font-size: 1.5rem;
+      margin-left: 0em;
+      margin-top: -0.5em;
+      @include upperText;
+    @include respond-above(sm){
+      font-size: 3rem;
+      margin-left: 1em;
+
+    }
+    }
+    h2{
+      font-size: 4rem;
+      margin-left: 0.2em;
+      @include upperText
+    }
+  }
+
+  .-white{
+    color: whitesmoke;
+  }
+  .-darkRed{
+    color: darkred;
+  }
+
+}
